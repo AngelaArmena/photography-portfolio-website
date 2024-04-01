@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="images/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <button class="themeToggle" onclick="themeToggle()"><i class="fa fa-sun-o"></i></button>
+
+        <div class="BGdesign">
+            <div id="Star1"></div>
+            <div id="Star2"></div>
+            <div id="Star3"></div>
+        </div>
+
+        <div class="part part1" id="1">
+            <div class="containerBlob">
+                <div class="Blobs inner">
+                    <div class="Blob"></div>
+
+                    <div class="frontPage inner">
+                        <div class="Hello Hi1">HELLO</div>
+                        <div class="Hello Hi2">KAMUSTA</div>
+                        <div class="Hello Hi3">HOLA</div>
+                        <div class="Hello Hi4">こんにちは</div>
+                        <div class="Hello Hi5">BONJOUR</div>
+                        <div class="Hello Hi6">CIAO</div>
+                        <div class="Hello Hi7">안녕하세요</div>
+                        <div class="Hello Hi8">GUTEN TAG</div>
+                        <div class="Hello Hi9">你好</div>
+                        <div class="Hello Hi10">SHALOM</div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                const Blob = document.querySelector('.Blob');
+                setInterval(setBorderRadius, 300);
+
+                function setBorderRadius() {
+                    Blob.style.setProperty('--br-blob', generateBorderRadiusValue());
+                    Blob.style.setProperty('--br-blob-after', generateBorderRadiusValue());
+                    Blob.style.setProperty('--br-blob-before', generateBorderRadiusValue());
+                }
+
+                function generateBorderRadiusValue() {
+                    return `${getRandomValue()}% ${getRandomValue()}% ${getRandomValue()}% ${getRandomValue()}% / ${getRandomValue()}% ${getRandomValue()}% ${getRandomValue()}%`;
+                }
+
+                function getRandomValue() {
+                    return Math.floor(Math.random() * 50) + 50;
+                }
+            </script>
+        </div>
+
+        <div class="part" id="aboutMe">
+            <h1 class="display-1">KHUSHALEE DEVANDAS</h1>
+            <div class="myPhoto">
+                <img src="images/ME/1.jpg">
+                <p class="h2">Hello, I'm Khushi Devandas, but you can call me Khushi. I'm more than just a photographer; I'm a storyteller behind the lens. My passion for photography stems from a desire to capture the beauty and emotions that surround us every day. Through my lens, I strive to create images that not only capture moments but also evoke feelings and memories. Whether it's a stunning landscape or an intimate portrait, I aim to convey the essence of the subject in every shot. With a blend of creativity and technical skill, I transform ordinary scenes into extraordinary works of art. Join me on a visual journey as I explore the world through my camera lens, one captivating image at a time. As a photographer, I invite you to see the world through my eyes, to experience the moments I capture from my unique perspective. Each photograph is a reflection of my vision, my interpretation of the world around me. Through my lens, I invite you to witness the beauty, the emotion, and the stories that unfold before me. It's not just about capturing images; it's about sharing my point of view, inviting you to see the world in a new light, one frame at a time. So come, join me on this visual journey, where every photo tells a story and every moment is seen through my eyes.</p>
+            </div>
+        </div>
+
+        <!-- STOCK PHOTOS -->
+        <div class="part part2" id="2">
+            <div class="containerPhotos">
+                <div class="photoBoxColumn">
+                    <div class="photoBox" id="photoBoxStock">
+                        <img class="photoIcon" src="images/1 - STOCK PHOTOS/1.jpg">
+                        <div class="photoDescription">
+                            <h2>Stock Photos</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photoBoxColumn">
+                    <div class="photoBox" id="photoBoxDepth">
+                        <img class="photoIcon" src="images/2 - DEPTH OF FIELD//1.jpg">
+                        <div class="photoDescription">
+                            <h2>Depth of Field</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photoBoxColumn">
+                    <div class="photoBox" id="photoBoxBokeh">
+                        <img class="photoIcon" src="images/3 - BOKEH/1.jpg">
+                        <div class="photoDescription">
+                            <h2>Bokeh</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photoBoxColumn">
+                    <div class="photoBox" id="photoBoxStudio">
+                        <img class="photoIcon" src="images/4 - STUDIO/1.jpg">
+                        <div class="photoDescription">
+                            <h2>Portrait</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photoBoxColumn">
+                    <div class="photoBox" id="photoBoxMotion">
+                        <img class="photoIcon" src="images/5 - MOTION/IMG_7421.JPG">
+                        <div class="photoDescription">
+                            <h2>Motion</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photoBoxColumn">
+                    <div class="photoBox" id="photoBoxFreeze">
+                        <img class="photoIcon" src="images/6 - FREEZE/1.JPG">
+                        <div class="photoDescription">
+                            <h2>Freeze</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photoBoxColumn">
+                    <div class="photoBox" id="photoBoxProduct">
+                        <img class="photoIcon" src="images/7 - PRODUCT/IMG_2942.jpg">
+                        <div class="photoDescription">
+                            <h2>Product</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photoBoxColumn">
+                    <div class="photoBox" id="photoBoxFood">
+                        <img class="photoIcon" src="images/8 - FOOD/IMG_8169.JPG">
+                        <div class="photoDescription">
+                            <h2>Food</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carouselContainer" id="carouselContainer">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <!-- Indicators will be added dynamically -->
+                    </ol>
+                    <div class="carousel-inner">
+                        <!-- Carousel items will be added dynamically -->
+                    </div>
+                    <a class="carouselControl carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carouselControl carousel-control-next" href="#carouselExampleIndicators" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="containerProduct">
+                <div class="productImage">
+                    <input type="checkbox" id="zoomCheck">
+                    <label for="zoomCheck">
+                        <img src="images/7 - PRODUCT/IMG_2953.jpg">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const photoBoxes = document.querySelectorAll('.photoBox');
+            var carouselType = '';
+            const carousel = document.querySelector('.carousel');
+            const carouselContainer = document.querySelector('.carouselContainer');
+            const containerProduct = document.querySelector('.containerProduct');
+            const productImage = document.querySelector('.productImage');
+            const part2 = document.querySelector('.part2');
+            let currentScrollPosition;
+            let isCarouselOpen = false;
+
+            photoBoxes.forEach(function (photoBox) {
+                photoBox.addEventListener('click', function () {
+                    const idPhotoBox = photoBox.id;
+                    console.log(idPhotoBox);
+
+                    // Get the current scroll position of part2
+                    if (!isCarouselOpen) {
+                        currentScrollPosition = part2.scrollTop;
+                    }
+
+                    if (idPhotoBox != 'photoBoxProduct') {
+                        carouselContainer.style.display = 'flex';
+                        part2.classList.add('carousel-opened');
+                        carouselContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        isCarouselOpen = true;
+                    }
+                    else if (idPhotoBox == 'photoBoxProduct') {
+                        containerProduct.style.display = 'flex';
+                        part2.classList.add('carousel-opened');
+                        containerProduct.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        isCarouselOpen = true;
+                    }
+
+                    // Determine which carousel to show based on the clicked photo box
+                    carouselType = idPhotoBox.substring(8);
+                    console.log('CarouselType: ' + carouselType);
+
+                    populateCarousel(carouselType);
+                });
+            });
+
+            document.addEventListener('click', function (event) {
+                const isClickInsideCarousel = carousel.contains(event.target);
+                const isClickInsideProduct = productImage.contains(event.target);
+                const isClickOnPhotoBox = event.target.closest('.photoBox');
+
+                if (!isClickInsideCarousel && !isClickOnPhotoBox) {
+                    carouselContainer.style.display = 'none';
+                    part2.classList.remove('carousel-opened');
+                    if (!isClickInsideProduct) {
+                part2.scrollTo({ top: currentScrollPosition, behavior: 'smooth' });
+                isCarouselOpen = false; // Update carousel state
+            }
+                }
+                if (!isClickInsideProduct && !isClickOnPhotoBox) {
+                    containerProduct.style.display = 'none';
+                    part2.classList.remove('carousel-opened');
+                    isCarouselOpen = false; // Update carousel state
+                }
+            });
+
+            function populateCarousel(category) {
+                const imageArrays = {
+                    Stock: [
+                        "images/1 - STOCK PHOTOS/1.jpg",
+                        "images/1 - STOCK PHOTOS/2.jpg",
+                        "images/1 - STOCK PHOTOS/3.jpg",
+                        "images/1 - STOCK PHOTOS/4.jpg",
+                        "images/1 - STOCK PHOTOS/5.jpg",
+                        "images/1 - STOCK PHOTOS/6.jpg",
+                        "images/1 - STOCK PHOTOS/7.jpg",
+                        "images/1 - STOCK PHOTOS/8.jpg",
+                        "images/1 - STOCK PHOTOS/9.jpg",
+                        "images/1 - STOCK PHOTOS/10.jpg"
+                    ],
+                    Depth: [
+                        "images/2 - DEPTH OF FIELD/1.jpg",
+                        "images/2 - DEPTH OF FIELD/2.jpg",
+                        "images/2 - DEPTH OF FIELD/3.jpg",
+                        "images/2 - DEPTH OF FIELD/4.jpg"
+                    ],
+                    Bokeh: [
+                        "images/3 - BOKEH/1.jpg",
+                        "images/3 - BOKEH/2.jpg",
+                        "images/3 - BOKEH/3.jpg",
+                        "images/3 - BOKEH/4.jpg",
+                        "images/3 - BOKEH/5.jpg"
+                    ],
+                    Studio: [
+                        "images/4 - STUDIO/1.jpg",
+                        "images/4 - STUDIO/2.jpg",
+                        "images/4 - STUDIO/3.jpg",
+                        "images/4 - STUDIO/4.png",
+                        "images/4 - STUDIO/5.png",
+                        "images/4 - STUDIO/6.png"
+                    ],
+                    Motion: [
+                        "images/5 - MOTION/1.jpg",
+                        "images/5 - MOTION/2.jpg",
+                        "images/5 - MOTION/3.jpg",
+                        "images/5 - MOTION/4.jpg"
+                    ],
+                    Freeze: [
+                        "images/6 - FREEZE/1.jpg",
+                        "images/6 - FREEZE/2.jpg",
+                        "images/6 - FREEZE/3.jpg",
+                        "images/6 - FREEZE/4.jpg",
+                        "images/6 - FREEZE/5.jpg",
+                        "images/6 - FREEZE/6.jpg",
+                        "images/6 - FREEZE/7.jpg",
+                        "images/6 - FREEZE/8.jpg",
+                        "images/6 - FREEZE/9.jpg",
+                        "images/6 - FREEZE/10.jpg",
+                        "images/6 - FREEZE/11.jpg"
+                    ],
+                    Food: [
+                        "images/8 - FOOD/1.png",
+                        "images/8 - FOOD/2.jpg",
+                        "images/8 - FOOD/3.jpg",
+                        "images/8 - FOOD/4.jpg",
+                        "images/8 - FOOD/5.jpg"
+                    ]
+                };
+
+                const carouselInner = document.querySelector('.carousel-inner');
+                const carouselIndicators = document.querySelector('.carousel-indicators');
+
+                carouselInner.innerHTML = ''; // Clear previous carousel content
+                carouselIndicators.innerHTML = ''; // Clear previous carousel indicators
+
+                // Populate carousel with images based on category
+                imageArrays[category].forEach((imagePath, index) => {
+                    const carouselItem = document.createElement('div');
+                    carouselItem.classList.add('carousel-item');
+                    if (index === 0) {
+                        carouselItem.classList.add('active');
+                    }
+
+                    const image = document.createElement('img');
+                    image.classList.add('d-block');
+                    image.classList.add('rounded');
+                    image.src = imagePath;
+                    console.log(imagePath);
+                    image.alt = `Slide ${index + 1}`;
+
+                    carouselItem.appendChild(image);
+                    carouselInner.appendChild(carouselItem);
+
+                    const indicator = document.createElement('li');
+                    indicator.setAttribute('data-target', '#carouselExampleIndicators');
+                    indicator.setAttribute('data-slide-to', index.toString());
+                    if (index === 0) {
+                        indicator.classList.add('active');
+                    }
+                    carouselIndicators.appendChild(indicator);
+                });
+            }
+        });
+
+
+        //portait carousel
+        class Carousel {
+            constructor(config) {
+                this.target = config.target;
+                this.items = config.items;
+                this.active = 0;
+                this.animating = false;
+
+                this.populate();
+            }
+
+            slide(forward) {
+                const delay = 50;
+
+                this.elements.items.out.classList.add('static');
+
+                switch (forward) {
+                    case true:
+                        setTimeout(() => {
+                            this.elements.items.out.classList.add('carousel__item--right');
+                            this.elements.items.out.classList.remove('carousel__item--left');
+
+                            setTimeout(() => {
+                                this.elements.items.out.classList.remove('static');
+
+                                setTimeout(() => {
+                                    this.elements.items.left.classList.add('carousel__item--out');
+
+                                    this.elements.items.center.classList.remove('carousel__item--center');
+                                    this.elements.items.center.classList.add('carousel__item--left');
+
+                                    this.elements.items.right.classList.remove('carousel__item--right');
+                                    this.elements.items.right.classList.add('carousel__item--center');
+
+                                    this.elements.items.out.classList.remove('carousel__item--out');
+                                }, delay);
+                            }, delay);
+                        }, delay);
+                        break;
+
+                    case false:
+                        setTimeout(() => {
+                            this.elements.items.out.classList.add('carousel__item--left');
+                            this.elements.items.out.classList.remove('carousel__item--right');
+
+                            setTimeout(() => {
+                                this.elements.items.out.classList.remove('static');
+
+                                setTimeout(() => {
+                                    this.elements.items.right.classList.add('carousel__item--out');
+
+                                    this.elements.items.center.classList.remove('carousel__item--center');
+                                    this.elements.items.center.classList.add('carousel__item--right');
+
+                                    this.elements.items.left.classList.remove('carousel__item--left');
+                                    this.elements.items.left.classList.add('carousel__item--center');
+
+                                    this.elements.items.out.classList.remove('carousel__item--out');
+                                }, delay);
+                            }, delay);
+                        }, delay);
+                        break;
+                }
+
+                setTimeout(() => {
+                    this.elements.items.left = this.target.querySelector('.carousel__item--left:not(.carousel__item--out)');
+                    this.elements.items.center = this.target.querySelector('.carousel__item--center');
+                    this.elements.items.right = this.target.querySelector('.carousel__item--right:not(.carousel__item--out)');
+                    this.elements.items.out = this.target.querySelector('.carousel__item--out');
+
+                    this.animating = false;
+                }, delay * 4);
+            }
+
+            updateValues(forward) {
+                if (!this.animating) {
+                    this.animating = true;
+
+                    let newItem = 0;
+
+                    switch (forward) {
+                        case true:
+                            if (this.active < this.items.length - 1) {
+                                ++this.active;
+                            } else {
+                                this.active = 0;
+                            }
+
+                            newItem = this.active + 1 <= this.items.length - 1 ? this.active + 1 : 0;
+                            break;
+
+                        case false:
+                            if (this.active > 0) {
+                                --this.active;
+                            } else {
+                                this.active = this.items.length - 1;
+                            }
+
+                            newItem = this.active - 1 >= 0 ? this.active - 1 : this.items.length - 1;
+                            break;
+                    }
+
+                    this.elements.items.out.style.backgroundImage = `url('${this.items[newItem].image}')`;
+
+                    this.slide(forward);
+                }
+            }
+
+            eventListeners() {
+                this.elements.arrows.left.addEventListener('click', this.updateValues.bind(this, false));
+                this.elements.arrows.right.addEventListener('click', this.updateValues.bind(this, true));
+            }
+
+            populate() {
+                function append(obj, target) {
+                    for (const el in obj) {
+                        if (obj[el].nodeName) {
+                            target.appendChild(obj[el]);
+                        } else {
+                            append(obj[el], target);
+                        }
+                    }
+                }
+
+                this.elements = {};
+                this.elements.items = {};
+                this.elements.arrows = {};
+
+                this.elements.items.left = document.createElement('div');
+                this.elements.items.center = document.createElement('div');
+                this.elements.items.right = document.createElement('div');
+                this.elements.items.out = document.createElement('div');
+                this.elements.arrows.left = document.createElement('div');
+                this.elements.arrows.right = document.createElement('div');
+
+                this.elements.items.left.classList.add('carousel__item');
+                this.elements.items.center.classList.add('carousel__item');
+                this.elements.items.right.classList.add('carousel__item');
+                this.elements.items.out.classList.add('carousel__item');
+                this.elements.items.left.classList.add('carousel__item--left');
+                this.elements.items.center.classList.add('carousel__item--center');
+                this.elements.items.right.classList.add('carousel__item--right');
+                this.elements.items.out.classList.add('carousel__item--right');
+                this.elements.items.out.classList.add('carousel__item--out');
+                this.elements.arrows.left.classList.add('carousel__arrow');
+                this.elements.arrows.right.classList.add('carousel__arrow');
+                this.elements.arrows.left.classList.add('carousel__arrow--left');
+                this.elements.arrows.right.classList.add('carousel__arrow--right');
+
+                this.elements.items.left.style.backgroundImage = `url('${this.items[this.items.length - 1].image}')`;
+                this.elements.items.center.style.backgroundImage = `url('${this.items[0].image}')`;
+                this.elements.items.right.style.backgroundImage = `url('${this.items[1].image}')`;
+
+                append(this.elements, this.target);
+
+                this.eventListeners();
+            }
+        }
+
+        /* Light & Dark Mode Toggle */
+        function themeToggle() {
+            document.body.classList.toggle('Dark');
+            const icon = document.querySelector('.themeToggle i');
+            if (icon.classList.contains('fa-sun-o')) {
+                icon.classList.remove('fa-sun-o');
+                icon.classList.add('fa-moon-o');
+            } else {
+                icon.classList.remove('fa-moon-o');
+                icon.classList.add('fa-sun-o');
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
